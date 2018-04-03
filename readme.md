@@ -1,6 +1,6 @@
 #### dialog 
 
-[Demo](https://jsfiddle.net/488c3j2r/4/)
+[Demo](https://jsfiddle.net/2u2mnypf/1/)
 
 ```javascript
 

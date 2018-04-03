@@ -13,6 +13,9 @@
         // Remove todas as máscaras
         $.removeAll('uix-mask');
 
+        // Adiciona visible
+        $dialog.classList.add('visible');
+
         // Adiciona nosso template
         $body.appendChild($dialog);
 
@@ -22,12 +25,12 @@
             
             $accept.addEventListener('click', onAccept);
             $reject.addEventListener('click', onReject);
-    
+
             function onAccept(){
                 hideAndClearDialog();
                 resolve();
             }
-    
+
             function onReject(){
                 hideAndClearDialog();
                 reject();
@@ -39,13 +42,12 @@
             $dialog.classList.remove('visible');
             timeout = setTimeout(() => {
                 $.removeAll('uix-mask');
-                console.log('removendo');
             }, 1000);
         }
 
         function startTemplate(){
             return $.parseToHtml(`
-                <uix-mask class="visible">
+                <uix-mask>
                     <uix-dialog>
                         <span class="title">${options.title}</span>
                         <div class="content">${options.content}</div>

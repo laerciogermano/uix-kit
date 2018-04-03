@@ -19,7 +19,7 @@ gulp.task('watch:css', () => {
 });
 
 gulp.task('jsmin', function() {
-    return gulp.src(['src/main.js', 'src/core/**/*.js', 'src/**/*.js'])
+    return gulp.src(['src/main/uix.js', 'src/main/**/*.js', 'src/components/**/*.js'])
     .pipe(babel({ presets: ['es2015'] }))
     .pipe(uglify({ mangle: false }))
     .pipe(concat('uix-kit.min.js'))

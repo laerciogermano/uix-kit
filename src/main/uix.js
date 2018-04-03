@@ -4,5 +4,4 @@
     // Initialize global Uix
     global.Uix = {};
     
-
 })(window);

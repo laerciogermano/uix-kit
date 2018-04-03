@@ -1,4 +1,8 @@
 .uix.btn{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    background-position: center;
     font-family: 'Roboto', sans-serif;
     background: none;
     border: none;
@@ -14,15 +18,9 @@
     height: 36px;
     line-height: 36px;
     min-width: 88px;
-    color: rgba(0, 0, 0, 0.3);
-    transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
     border-radius: 2px;
     user-select: none;
     overflow: hidden;
     text-align: center;
     text-transform: uppercase;
-}
-
-.uix.btn:hover{
-    background-color: rgba(0, 0, 0, 0.1);
 }

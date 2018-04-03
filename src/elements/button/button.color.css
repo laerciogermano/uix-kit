@@ -1,0 +1,51 @@
+/* Default */
+.uix.btn{
+    background-position: center;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    transition: background ease-in-out 0.5s;
+    color: rgba(0,0,0,0.4); 
+}
+
+.uix.btn:hover{
+    background: #000 ;
+}
+
+.uix.btn:active{
+    background-color: #ccc;
+    background-size: 100%;
+    transition: background 0ms;
+}
+
+/* Blue */
+.uix.btn.blue{
+    background-color: #179bff;
+    color: #fff;
+}
+
+.uix.btn.blue:hover{
+    background: #0088f8 radial-gradient(circle, transparent 1%, #0088f8 1%) center/15000%;
+}
+
+.uix.btn.blue:active{
+    background-color: #179bff;
+    background-size: 100%;
+    transition: background 0ms;
+}
+
+/* Green */
+.uix.btn.green{
+    background-color: #2ad245;
+    color: #fff;
+}
+
+.uix.btn.green:hover{
+    background: #25c13e radial-gradient(circle, transparent 1%, #25c13e 1%) center/15000%;
+}
+
+.uix.btn.green:active{
+    background-color: #2ad245;
+    background-size: 100%;
+    transition: background 0ms;
+}
