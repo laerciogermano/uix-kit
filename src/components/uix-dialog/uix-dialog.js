@@ -53,7 +53,7 @@
                         <div class="content">${options.content}</div>
                         <div class="actions">
                             <button class="uix btn" uix-reject>${options.buttons[0]}</button>
-                            <button class="uix btn" uix-accept>${options.buttons[1]}</button>
+                            <button class="uix btn green" uix-accept>${options.buttons[1]}</button>
                         </div>
                     </uix-dialog>
                 </uix-mask>

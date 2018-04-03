@@ -59,9 +59,14 @@ uix-dialog .content{
 }
 
 uix-dialog .actions{
+    display: grid;
     margin-top: 20px;
     display: flex;
     justify-content: flex-end;
+}
+
+uix-dialog .actions .btn:not(:first-child){
+    margin-left: 5px;
 }
 
 @keyframes fadeInBottom{

@@ -9,7 +9,7 @@
 }
 
 .uix.btn:hover{
-    background: #000 ;
+    background: #eee radial-gradient(circle, transparent 1%, #eee 1%) center/15000%;
 }
 
 .uix.btn:active{
@@ -46,6 +46,22 @@
 
 .uix.btn.green:active{
     background-color: #2ad245;
+    background-size: 100%;
+    transition: background 0ms;
+}
+
+/* Red */
+.uix.btn.red{
+    background-color: #f75b48;
+    color: #fff;
+}
+
+.uix.btn.red:hover{
+    background: #ec4d3a radial-gradient(circle, transparent 1%, #ec4d3a 1%) center/15000%;
+}
+
+.uix.btn.red:active{
+    background-color: #f75b48;
     background-size: 100%;
     transition: background 0ms;
 }

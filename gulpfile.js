@@ -5,7 +5,6 @@ const uglify = require('gulp-uglify');
 const babel  = require('gulp-babel');
 const concat = require('gulp-concat');
 const cssmin = require('gulp-cssmin');
-const flow   = require('gulp-flowtype');
 
 gulp.task('default', ['watch:js', 'watch:css']);
 gulp.task('build', ['jsmin', 'cssmin']);
