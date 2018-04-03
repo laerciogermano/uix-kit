@@ -1,0 +1,105 @@
+uix-mask{
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.5);
+}
+
+uix-mask.visible{
+    animation: fadeIn 0.2s ease-in-out forwards;
+}
+
+uix-mask.hidden{
+    animation: fadeOut 0.2s ease-in-out forwards;
+}
+
+uix-dialog{
+    flex-direction: column;
+    max-width: 768px;
+    background-color: #fff;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 45px, rgba(0, 0, 0, 0.22) 0px 10px 18px;
+    border-radius: 2px;
+    margin: 0px 20px;
+    border-radius: 2px;
+    padding: 16px 16px 12px 16px;
+    margin-top: -10%;
+}
+
+uix-mask.visible uix-dialog{
+    animation: fadeInBottom 0.2s ease-in-out forwards;
+}
+
+uix-mask.hidden uix-dialog{
+    animation: fadeOutTop 0.2s ease-in-out forwards;
+}
+
+uix-dialog .title{
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.9);
+    margin: 10px 15px 0px 15px;
+}
+
+uix-dialog .content{
+    font-weight: 400;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 20px;
+    margin: 0 15px;
+    margin-top: 10px;
+}
+
+uix-dialog .actions{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+@keyframes fadeInBottom{
+    from{
+        transform: translate(0,-50px);
+        opacity: 0;
+    }
+    to{
+        transform: translate(0, 0);
+        opacity: 1; 
+    }
+}
+
+@keyframes fadeOutTop{
+    from{
+        transform: translate(0, 0);
+        opacity: 1; 
+    }
+    to{
+        transform: translate(0,-50px);
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
