@@ -8,6 +8,7 @@ const cssmin = require('gulp-cssmin');
 const flow   = require('gulp-flowtype');
 
 gulp.task('default', ['watch:js', 'watch:css']);
+gulp.task('build', ['jsmin', 'cssmin']);
 
 gulp.task('watch:js', () => {
     return gulp.watch('src/**/*.js', { ignoreInitial: true }, ['jsmin']);
