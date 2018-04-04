@@ -16,11 +16,25 @@
 </head>
 <body>
 
+    <h4>Dialog</h4>
+    <button class="uix btn blue" onclick="openModal()">Open Dialog</button>
+
+    <h4>Buttons</h4>
+
     <button class="uix btn">Default</button>
     <button class="uix btn blue">Blue</button>
     <button class="uix btn red">Red</button>
     <button class="uix btn green">Green</button>
 
     <script src="dist/uix-kit.min.js"></script>
+    <script>
+        function openModal(){
+            Uix.dialog({
+                title: 'Alterar senha',
+                content: 'Tem certeza que deseja alterar a senha?',
+                buttons: ['cancelar', 'enviar']
+            });
+        }
+    </script>
 </body>
 </html>

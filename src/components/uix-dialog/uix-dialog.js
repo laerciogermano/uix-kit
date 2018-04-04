@@ -42,7 +42,7 @@
             $dialog.classList.remove('visible');
             timeout = setTimeout(() => {
                 $.removeAll('uix-mask');
-            }, 1000);
+            }, 300);
         }
 
         function startTemplate(){

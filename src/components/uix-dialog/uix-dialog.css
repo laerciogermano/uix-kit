@@ -30,7 +30,7 @@ uix-dialog{
     border-radius: 2px;
     margin: 0px 20px;
     border-radius: 2px;
-    padding: 16px 16px 14px 16px;
+    padding: 8px;
     margin-top: -10%;
 }
 
@@ -47,7 +47,7 @@ uix-dialog .title{
     font-weight: 500;
     font-size: 18px;
     color: rgba(0, 0, 0, 0.9);
-    margin: 10px 15px 0px 15px;
+    margin: 15px 15px 0px 15px;
 }
 
 uix-dialog .content{
@@ -72,7 +72,7 @@ uix-dialog .actions .btn:not(:first-child){
 
 @keyframes fadeInBottom{
     from{
-        transform: translate(0,-50px);
+        transform: translate(0, -100%);
         opacity: 0;
     }
     to{
