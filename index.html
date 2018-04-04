@@ -8,16 +8,31 @@
     <link href="dist/uix-kit.min.css" rel="stylesheet" />
 
     <style>
-        body{
+        body{ 
             padding: 50px;
-
+        }
+        
+        .uix.form{
+            width: 400px;
         }
     </style>
 </head>
 <body>
 
+    <h4>Forms</h4>
+    
+    <form class="uix form">
+        <div class="field">
+            <input class="input" type="text" placeholder="Your name" />
+            <input class="input" type="text" placeholder="Billing Address" />
+        </div>
+        <div class="field">
+            <input class="input" type="text" placeholder="Billing Address" />
+        </div>
+    </form>
+
     <h4>Dialog</h4>
-    <button class="uix btn blue" onclick="openModal()">Open Dialog</button>
+    <button class="uix btn blue" onclick="openDialog()">Open Dialog</button>
 
     <h4>Buttons</h4>
 
@@ -28,6 +43,14 @@
 
     <script src="dist/uix-kit.min.js"></script>
     <script>
+        function openDialog(){
+            Uix.dialog({
+                title: 'Alterar senha',
+                content: 'Tem certeza que deseja alterar a senha?',
+                buttons: ['cancelar', 'enviar']
+            });
+        }
+
         function openModal(){
             Uix.dialog({
                 title: 'Alterar senha',

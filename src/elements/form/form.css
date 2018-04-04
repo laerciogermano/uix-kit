@@ -1,0 +1,32 @@
+.uix.form{}
+
+.uix .field{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.uix.form .input{
+    flex: 1;
+    height: 45px;
+    padding: 0 15px;
+    outline: none;
+    font-size: 14px;
+    border-radius: 2px;
+    color: #555;
+    border: 1px solid #DCDEE0;
+    font-family: 'Roboto', sans-serif;
+    transition: all ease-in-out 0.3s;
+    letter-spacing: 0.2px;
+}
+
+.uix.form .field > *:not(:first-child){
+    margin-left: 10px;
+}
+
+.uix.form .input::placeholder{
+    color: #bbb;
+}
+
+.uix.form .input:focus{
+    border: 1px solid #ccc;
+}
