@@ -1,8 +1,30 @@
 .uix.form{}
 
+.uix.form .fields > *:not(:first-child){
+    margin-left: 10px;
+}
+
 .uix .field{
+    position: relative;
     display: flex;
     margin-bottom: 10px;
+}
+
+.uix input+label{
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    font-size: 14px;
+    color: #bbb;
+    transition: ease-in-out all 300ms;
+}
+
+
+.uix input:hover+label,
+.uix input:active+label,
+.uix input:focus+label{
+    top: 5px;
+    font-size: 10px;
 }
 
 .uix.form .input{
@@ -19,9 +41,6 @@
     letter-spacing: 0.2px;
 }
 
-.uix.form .field > *:not(:first-child){
-    margin-left: 10px;
-}
 
 .uix.form .input::placeholder{
     color: #bbb;
