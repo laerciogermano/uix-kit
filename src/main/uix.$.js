@@ -14,4 +14,25 @@
         return Array.prototype.forEach.call(elements, e => e.remove());
     }
 
+    Uix.$.keyup = function keyup(selector, fn){
+        let $elements = document.querySelectorAll(selector);
+
+        Array.prototype.forEach.call($elements, el => {
+            insertListener(el);
+        });
+        
+        document.addEventListener('DOMNodeInserted', e => {
+            let $elements = document.querySelectorAll(selector);
+
+            Array.prototype.forEach.call($elements, el => {
+                Array.prototype.indexOf.call($elements, el) >= 0
+                    && insertListener(el);
+            });
+        }); 
+
+        function insertListener(target){
+            target.addEventListener('keyup', fn);
+        }
+    };
+
 })(window, window.Uix);

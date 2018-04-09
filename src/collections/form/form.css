@@ -1,0 +1,19 @@
+.uix.form .fields{
+    display: flex;
+}
+
+.uix.form .fields.to-right{
+    justify-content: flex-end;
+}
+
+.uix.form .fields > *:not(:first-child){
+    margin-left: 10px;
+}
+
+.uix.form .fields > *{
+    flex: 1;
+}
+
+.uix.form .field{
+    margin-bottom: 15px;
+}

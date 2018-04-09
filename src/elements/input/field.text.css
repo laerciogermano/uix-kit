@@ -1,0 +1,57 @@
+.uix .field{
+    position: relative;
+    display: flex;
+    border: 1px solid #DCDEE0;
+    border-radius: 2px;
+    height: 45px;
+}
+
+.uix .field input{
+    z-index: 1;
+    background: none;
+    transition: ease-in-out all 300ms;
+}
+
+.uix .field input+label{
+    position: absolute;
+    left: 14px;
+    font-size: 12px;
+    color: #bbb;
+    transition: ease-in-out all 200ms;
+    opacity: 1;
+    top: 15px;
+    z-index: 0;
+    opacity: 0;
+    transition: ease-in-out all 300ms;
+}
+
+.uix .field input:focus+label,
+.uix .field input.active+label{
+    opacity: 1;
+    top: 7px;
+    color: #ccc; 
+}
+
+
+.uix .field .input.active,
+.uix .field .input:focus{
+    padding-top: 15px !important;
+}
+
+
+.uix.form .field .input{
+    flex: 1;   
+    outline: none;
+    font-size: 13px;
+    color: #555;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.2px;
+    width: 100%;
+    padding: 0 14px;
+    border: none;
+    outline: none;
+}
+
+.uix.form .field .input::placeholder{
+    color: #bbb;
+}

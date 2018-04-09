@@ -23,4 +23,5 @@
     overflow: hidden;
     text-align: center;
     text-transform: uppercase;
+    flex: none !important;
 }
